@@ -3,19 +3,72 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --navbar-height: 59px;
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
 /* Navigation Bar */
 #navbar {
+  z-index: 100;
+  align-items: center;
   display: flex;
-  border: 2px solid red;
-  display: flex;
+  position: sticky;
+  top: 0px;
+}
+#navbar::before {
+  content: "";
+  background-color: #ada7af;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
 }
 #logo {
-  /* border: 2px solid rgb(13, 216, 47); */
-  margin: auto 0px; /*    top/bottom  left/right      */ /*    top right bottom left      */
-  height: 5em;
+  margin: auto 0px;
 }
 #logo img {
-  /* border: 2px solid rgb(33, 13, 216); */
   margin: auto 0px;
   height: 5em;
 }
@@ -25,53 +78,448 @@
   margin: auto 20px;
   padding: 0px 5px;
 }
-#navbar ul li {
-  /* border: 2px solid blue; */
+/*#navbar ul */
+li {
   list-style: none;
   padding: 0px 0px;
-  /* margin: 0px 5px; */
 }
+.btn,
 #navbar ul li a {
   border: 2px solid blue;
   list-style: none;
-  padding: 8px 35px;
-  margin: 0px 2px;
+  padding: 8px 25px;
+  margin: 0px 15px;
   border-radius: 20px;
   text-decoration: none;
   color: black;
-  display: inline-block;
+  display: block;
 }
 #navbar ul li a:hover {
   background-color: rgb(187, 187, 187);
   color: white;
-  display: block;
 }
 
-/* Container */
-.container {
-    display : grid;
-  grid-template-areas: "intro-left intro-right";
-}
 /* Home - Intro */
+#home::before {
+  content: "";
+  position: absolute;
+  background: url("../banner.jpg") no-repeat center center/cover;
+  height: 500px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 410px;
+  justify-content: center; /*Horizontally*/
+  align-items: center;
+}
+#home h1 {
+  color: white;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+#specialities-container > p,
+#home p {
+  color: white;
+  /* text-align: center; */
+  font-size: 1.5rem;
+  font-family: "Bree Serif", serif;
+}
+.home-container {
+  border: 2px solid rgb(12, 160, 19);
+  display: flex;
+  width: 100%;
+}
 #intro-left {
-  grid-area: intro-left;
+  text-align: center;
+  margin: 0 0;
+  width: 50%;
   padding: 20px 20px;
+  justify-content: center;
+  display: flex;
+  flex-flow: column;
   border: 2px solid rgb(0, 255, 0);
 }
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 #intro-right {
-    padding: 20px 20px;
-  grid-area: intro-right;
+  margin: 0 0;
+  padding: 20px 20px;
+  width: 50%;
   border: 2px solid rgb(160, 91, 12);
 }
-/* Specialities */
-#specialities {
-  border: 2px solid rgb(255, 0, 0);
+#intro-right img {
+  /* height: 27em; */
+  width: 100%;
 }
-/* Recommendations */
+
+/* -------------------- Specialities -------------------- */
+
+#specialities,
 #recommendations {
-  border: 2px solid rgb(251, 255, 0);
+  /* position: relative; */
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 0 0; */
+  /* padding: 2px 2px; */
+  /* border: 2px solid rgb(255, 0, 0); */
 }
+#specialities-container p {
+  color: black;
+  /* And all other properties inherited already from '#home p' */
+}
+.items {
+  align-items: center;
+  max-width: 21em;
+  justify-content: center;
+
+  margin: 27px 33px;
+  padding: 36px 36px;
+
+  /* width: 32%; */
+  /* top-left | top-right | bottom-right | bottom-left */
+  /* height: 30px; */
+  /* background: #9ccfab; */
+}
+
+.image {
+  /* width: auto; */
+  margin-bottom: -53px;
+}
+img[alt="rec"],
+img[alt="specs"] {
+  width: 100%;
+  z-index: 1;
+  /* box-align : center; */
+}
+img[alt="non-veg"],
+img[alt="veg"] {
+  background-color: floralwhite;
+  border-radius: 2px;
+  position: relative;
+  bottom: 43px;
+  left: 10px;
+  z-index: 2;
+  height: 30px;
+}
+.label {
+  position: relative;
+  display: flex;
+  bottom: 61px;
+  left: 0px;
+  flex-direction: row-reverse;
+}
+.label-content {
+  margin: 0px 0px 0px;
+  font-size: 19px;
+  line-height: 23px;
+  padding: 0px 0.6rem;
+  background: rgb(39, 129, 231);
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  width: max-content;
+  border-radius: 0.2rem 0 0 0.2rem;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.red {
+  background: rgb(214, 27, 105);
+}
+
+.box1 {
+  border: 2px solid rgb(160, 91, 12);
+  border-radius: 5px;
+}
+.btn2 {
+  font-size: 20px;
+  padding: 0px 5px;
+  margin-right: 5px;
+}
+.btn2:focus::after {
+  content: "Added";
+  padding: 0px 3px;
+  background-color: rgb(93, 184, 93);
+  /* background-color: rgb(93, 184, 93); */
+}
+/* .btn2{
+} */
+.foodname {
+  display: inline-block;
+}
+/* .box1 > h2::before{
+  content: "This is the content";
+} */
+
+/* -------------------- Recommendations -------------------- */
+
+/* #recommendations {
+  margin: 20px 20px;
+  padding: 20px 20px;
+  border: 2px solid rgb(251, 255, 0);
+} */
+form.example {
+  display: flex;
+  margin: 14px auto;
+  max-width: 45%;
+}
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 17%;
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.seArch {
+  display: flex;
+  justify-content: center;
+
+  /* margin : 2px 2px;
+  padding: 2px 2px; */
+}
+input[type="search"] {
+  font-size: 20px;
+  width: 45%;
+  /* width:auto; */
+  margin: 20px 16px;
+  padding: 10px 25px;
+  /* display: inline-block; */
+}
+#recommendations .items {
+  align-items: center;
+  max-width: 286px;
+  justify-content: center;
+  margin: 15px 24px;
+  padding: 11px 11px;
+
+  /* width: 32%; */
+  /* top-left | top-right | bottom-right | bottom-left */
+  /* height: 30px; */
+  /* background: #9ccfab; */
+}
+
 /* Reviews */
-#reviews {
+.review-container {
+  display: flex;
+  border: 2px solid black;
+  margin: 0 0 0 100px;
+}
+.reviews {
+  flex: 5;
+  margin: 20px 10px 20px 0px;
+  height: 528px;
   border: 2px solid rgb(0, 225, 255);
+  box-sizing: border-box;
+  overflow: auto;
+}
+.form {
+  flex: 2;
+  /* position: sticky; */
+  right: 5px;
+
+  height: 528px;
+  margin: 20px 0px;
+  padding: 15px 20px;
+  border: 2px solid rgb(238, 255, 0);
+  /* border: 2px solid white; */
+  /* margin: 106px 80px; */
+  /* padding: 75px; */
+  /* width: 33%; */
+  border-radius: 28px;
+  box-sizing: border-box;
+}
+.form-group {
+  margin: 20px;
+}
+textarea {
+  resize: none;
+  height: 5.9em;
+}
+.form-group input,
+textarea {
+  font-family: "Baloo Bhai", cursive;
+  text-align: center;
+  display: block;
+  width: auto;
+
+  padding: 1px;
+  border: 2px solid black;
+  margin: 11px auto;
+  font-size: 25px;
+  border-radius: 8px;
+}
+.guide__user-avatar__wrap {
+  display: inline-block;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 50px;
+  flex: none;
+  align-self: start;
+}
+.guide__user-comment__header {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+}
+.guide__user-avatar {
+  background-color: #fff;
+  background-size: cover;
+  border-radius: 50%;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1;
+}
+.guide__user-comment__meta {
+  margin: 6px 0 0.7rem 0.7rem;
+}
+.meta-group {
+  display: block;
+}
+.community-badge-container-achievements {
+  margin-top: 0.4em;
+}
+.guide__user-comment__menu {
+  align-self: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.comment-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  width: auto;
+  padding: 25px;
+}
+.comment-body p {
+  padding: 1em 0px;
+}
+.btn3 {
+  font-family: "Baloo Bhai", cursive;
+  margin: 0px auto;
+  background-color: black;
+  color: white;
+  padding: 4px 14px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  display: block;
+  width: 74%;
+  /* margin: 20px auto; */
+}
+
+/* -------------------------Footer----------------------- */
+#footer {
+  margin: 20px 0px;
+  border: 2px solid red;
+}
+.logo{
+  margin: auto 10px;
+}
+.logo a{
+  width: auto;
+}
+#footer::before {
+  content: "";
+  position: absolute;
+  background: url("../banner.jpg") no-repeat center center/cover;
+  height: 500px;
+  /* top: 0px;
+  left: 0px; */
+  width: 100%;
+  z-index: -1;
+  opacity: 0.19;
+}
+.columns{
+  margin: 30px auto;
+}
+.navigation, .links, .instaFeed{
+  margin: 0px 22px;
+}
+
+.d-flex{
+  display: flex;
+  flex-direction: row;
+}
+.d-flex-col{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Utility Classes */
+.h-primary {
+  font-family: "Bree Serif", serif;
+  font-size: 3.8rem;
+  padding: 12px;
+}
+.h-secondary {
+  font-family: "Bree Serif", serif;
+  font-size: 2.3rem;
+  padding: 12px;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.foodname {
+  font-family: "Bree Serif", serif;
 }
