@@ -1,12 +1,814 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Your Favourite Online Service Restaurant | MyOnlineChef.com</title>
 </head>
+
 <body>
-    Hello I am Shubham
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="MyOnlineChef.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#specialities">Our Specialities</a></li>
+            <li class="item"><a href="#recommendations">Recommendations</a></li>
+            <li class="item"><a href="#reviews">Reviews</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Every day is a good day for your restaurant.</h1>
+        <p class="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus.
+        </p>
+        <p class="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+        <!-- <button class="btn">Order Now</button> -->
+    </section>
+    <div class="home-container">
+        <section id="intro-left" class="h-primary">
+            Welcome to MyOnlineChef
+            <p class="h-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veniam cupiditate magni
+                porro reiciendis voluptatem sint.</p>
+            <!-- <button class="btn">Check Our Specialities</button> -->
+            <a class="btn" href="#specialities">Check Our Specialities</a>
+        </section>
+        <section id="intro-right">
+            <img src="home-right-intro.jpg" alt="">
+        </section>
+    </div>
+    <section id="specialities-container">
+        <h1 class="h-primary center">Our Specialities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus. </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+        <div id="specialities" class="home-container">
+            <!-- All these images are in 6 : 4 ratio -->
+            <section class="box1 items">
+                <div class="image">
+                    <img src="specialities/pizza-curved.png" alt="specs">
+                    <img class="veg" src="specialities/veg.png" alt="veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button type="button" class="btn2">Add+</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p class="left">Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="specialities/hamburger-curved.png" alt="specs">
+                    <img class="veg" src="specialities/veg.png" alt="veg">
+                    <div class="label">
+                        <p class="label-content red">50% OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Hamburger</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="specialities/sandwich-curved.png" alt="specs">
+                    <img class="veg" src="specialities/veg.png" alt="veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Sandwich</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="specialities/pizza-curved.png" alt="specs">
+                    <img class="non-veg" src="specialities/non-veg.png" alt="non-veg">
+                    <div class="label">
+                        <p class="label-content red">₹ 25 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="specialities/pizza-curved.png" alt="specs">
+                    <img class="non-veg" src="recommendations/non-veg.png" alt="non-veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="specialities/pizza-curved.png" alt="specs">
+                    <img class="non-veg" src="recommendations/non-veg.png" alt="non-veg">
+                    <div class="label">
+                        <p class="label-content">₹ 100 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+
+
+        </div>
+    </section>
+    <!-- <div id="recommendations" class="container">
+        <section class="box items">
+            <img src="recommendations/pizza-curved.png" alt="rec">
+            <h2 class="foodname">Food Catering</h2>
+            <p>Making a reservation at delicioues restaurant is easy.</p>
+        </section>
+        <section class="box items">
+            <img src="recommendations/hamburger-curved.png" alt="rec">
+            <h2 class="foodname">Food Catering</h2>
+            <p>Making a reservation at delicioues restaurant is easy.</p>
+
+        </section>
+        <section class="box items">
+
+            <img src="recommendations/sandwich-curved.png" alt="rec">
+            <h2 class="foodname">Food Catering</h2>
+            <p>Making a reservation at delicioues restaurant is easy.</p>
+
+        </section>
+        <section class="box items">
+
+            <img src="recommendations/pizza-curved.png" alt="rec">
+            <h2 class="foodname">Food Catering</h2>
+            <p>Making a reservation at delicioues restaurant is easy.</p>
+
+        </section>
+        <section class="box items">
+
+            <img src="recommendations/pizza-curved.png" alt="rec">
+            <h2 class="foodname">Food Catering</h2>
+            <p>Making a reservation at delicioues restaurant is easy.</p>
+
+        </section>
+        <section class="box items">
+
+            <img src="recommendations/pizza-curved.png" alt="rec">
+            <h2 class="foodname">Food Catering</h2>
+            <p>Making a reservation at delicioues restaurant is easy.</p>
+
+        </section>
+    </div> -->
+    <section id="recommendations-container">
+        <h1 class="h-primary center">Recommendations</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus. </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+        <!-- <div class="seArch"><input type="search" placeholder="Search among all delicious dishes" ><div style="margin: 20px 16px; font-size: 20px;">&#128269;</div></div> -->
+        <form class="example" action="/action_page.php">
+            <input type="text" placeholder="Search among All Delicious Dishes" name="search2">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <div id="recommendations" class="home-container">
+            <!-- All these images are in 6 : 4 ratio -->
+            <section class="box1 items">
+                <div class="image">
+                    <img src="recommendations/01.jpg" alt="specs">
+                    <img class="veg" src="recommendations/veg.png" alt="veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button type="button" class="btn2">Add+</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p class="left">Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="recommendations/02.jpg" alt="specs">
+                    <img class="veg" src="recommendations/veg.png" alt="veg">
+                    <div class="label">
+                        <p class="label-content red">50% OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Hamburger</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="recommendations/03.jpg" alt="specs">
+                    <img class="veg" src="recommendations/veg.png" alt="veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Sandwich</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="recommendations/04.jpg" alt="specs">
+                    <img class="non-veg" src="recommendations/non-veg.png" alt="non-veg">
+                    <div class="label">
+                        <p class="label-content red">₹ 25 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="recommendations/05.jpg" alt="specs">
+                    <img class="non-veg" src="recommendations/non-veg.png" alt="non-veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="recommendations/06.jpg" alt="specs">
+                    <img class="non-veg" src="recommendations/veg.png" alt="non-veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="recommendations/07.jpg" alt="specs">
+                    <img class="non-veg" src="recommendations/non-veg.png" alt="non-veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="recommendations/08.jpg" alt="specs">
+                    <img class="non-veg" src="recommendations/non-veg.png" alt="non-veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="recommendations/09.jpg" alt="specs">
+                    <img class="non-veg" src="recommendations/non-veg.png" alt="non-veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="recommendations/10.jpg" alt="specs">
+                    <img class="non-veg" src="recommendations/non-veg.png" alt="non-veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="recommendations/11.jpg" alt="specs">
+                    <img class="non-veg" src="recommendations/non-veg.png" alt="non-veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="recommendations/12.jpg" alt="specs">
+                    <img class="non-veg" src="recommendations/non-veg.png" alt="non-veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="recommendations/13.jpg" alt="specs">
+                    <img class="non-veg" src="recommendations/non-veg.png" alt="non-veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="recommendations/14.jpg" alt="specs">
+                    <img class="non-veg" src="recommendations/non-veg.png" alt="non-veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="recommendations/15.jpg" alt="specs">
+                    <img class="non-veg" src="recommendations/non-veg.png" alt="non-veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="recommendations/16.jpg" alt="specs">
+                    <img class="non-veg" src="recommendations/non-veg.png" alt="non-veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="recommendations/17.jpg" alt="specs">
+                    <img class="non-veg" src="recommendations/non-veg.png" alt="non-veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="recommendations/18.jpg" alt="specs">
+                    <img class="non-veg" src="recommendations/non-veg.png" alt="non-veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="recommendations/19.jpg" alt="specs">
+                    <img class="non-veg" src="recommendations/non-veg.png" alt="non-veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+            <section class="box1 items">
+                <div class="image">
+                    <img src="recommendations/20.jpg" alt="specs">
+                    <img class="non-veg" src="recommendations/non-veg.png" alt="non-veg">
+                    <div class="label">
+                        <p class="label-content">₹ 50 OFF</p>
+                    </div>
+                </div>
+                <div display="flex">
+                    <button class="btn2">Add +</button>
+                    <h2 class="foodname">Pizza</h2>
+                </div>
+                <p>Making a reservation at delicioues restaurant is easy.</p>
+            </section>
+
+        </div>
+    </section>
+    <div class="review-container">
+        <section id="reviews" class="reviews">
+            <div class="comment-wrapper ">
+                <header class="guide__user-comment__header">
+                    <div class="guide__user-avatar__wrap">
+                        <div class="guide__user-avatar"
+                            style="background-image: url(https://support.zendesk.com/system/photos/107280797/1913460_10152107732991964_6731524725653184974_o.jpg);">
+                        </div>
+
+                    </div>
+                    <div class="guide__user-comment__meta">
+                        <span title="Christian Colding">
+
+                            Christian Colding
+
+                        </span>
+                        <div class="meta-group">
+
+                            4 years ago
+
+                        </div>
+                        <div class="community-badge-container-titles">
+
+                        </div>
+                        <div class="community-badge-container-achievements">
+
+                        </div>
+                    </div>
+                    <div class="guide__user-comment__menu">
+                </header>
+                <section class="comment-body">
+                    <p>Thank you again Joel. I do think we are thinking in the same direction and this definitely helps
+                        me in understanding how this could help.</p>
+                    <p>Regarding how to collect feedback. Did you consider allowing customers to create a ticket for
+                        feedback instead? It could perhaps be a lightweight ticket form that you use, so people don't
+                        have to enter a lot, but you would receive them in your Zendesk and could create a view for
+                        them. I am most likely missing a use case here, so if this is something you've thought of before
+                        I would love hear whether that could work in your organization.</p>
+                </section>
+            </div>
+            <hr>
+            <div class="comment-wrapper ">
+                <header class="guide__user-comment__header">
+                    <div class="guide__user-avatar__wrap">
+                        <div class="guide__user-avatar"
+                            style="background-image: url(https://support.zendesk.com/system/photos/107280797/1913460_10152107732991964_6731524725653184974_o.jpg);">
+                        </div>
+
+                    </div>
+                    <div class="guide__user-comment__meta">
+                        <span title="Christian Colding">
+
+                            Christian Colding
+
+                        </span>
+                        <div class="meta-group">
+
+                            4 years ago
+
+                        </div>
+                        <div class="community-badge-container-titles">
+
+                        </div>
+                        <div class="community-badge-container-achievements">
+
+                        </div>
+                    </div>
+                    <div class="guide__user-comment__menu">
+                </header>
+                <section class="comment-body">
+                    <p>Thank you again Joel. I do think we are thinking in the same direction and this definitely helps
+                        me in understanding how this could help.</p>
+                    <p>Regarding how to collect feedback. Did you consider allowing customers to create a ticket for
+                        feedback instead? It could perhaps be a lightweight ticket form that you use, so people don't
+                        have to enter a lot, but you would receive them in your Zendesk and could create a view for
+                        them. I am most likely missing a use case here, so if this is something you've thought of before
+                        I would love hear whether that could work in your organization.</p>
+                </section>
+            </div>
+            <hr>
+            <div class="comment-wrapper ">
+                <header class="guide__user-comment__header">
+                    <div class="guide__user-avatar__wrap">
+                        <div class="guide__user-avatar"
+                            style="background-image: url(https://support.zendesk.com/system/photos/107280797/1913460_10152107732991964_6731524725653184974_o.jpg);">
+                        </div>
+
+                    </div>
+                    <div class="guide__user-comment__meta">
+                        <span title="Christian Colding">
+
+                            Christian Colding
+
+                        </span>
+                        <div class="meta-group">
+
+                            4 years ago
+
+                        </div>
+                        <div class="community-badge-container-titles">
+
+                        </div>
+                        <div class="community-badge-container-achievements">
+
+                        </div>
+                    </div>
+                    <div class="guide__user-comment__menu">
+                </header>
+                <section class="comment-body">
+                    <p>Thank you again Joel. I do think we are thinking in the same direction and this definitely helps
+                        me in understanding how this could help.</p>
+                    <p>Regarding how to collect feedback. Did you consider allowing customers to create a ticket for
+                        feedback instead? It could perhaps be a lightweight ticket form that you use, so people don't
+                        have to enter a lot, but you would receive them in your Zendesk and could create a view for
+                        them. I am most likely missing a use case here, so if this is something you've thought of before
+                        I would love hear whether that could work in your organization.</p>
+                </section>
+            </div>
+            <hr>
+            <div class="comment-wrapper ">
+                <header class="guide__user-comment__header">
+                    <div class="guide__user-avatar__wrap">
+                        <div class="guide__user-avatar"
+                            style="background-image: url(https://support.zendesk.com/system/photos/107280797/1913460_10152107732991964_6731524725653184974_o.jpg);">
+                        </div>
+
+                    </div>
+                    <div class="guide__user-comment__meta">
+                        <span title="Christian Colding">
+
+                            Christian Colding
+
+                        </span>
+                        <div class="meta-group">
+
+                            4 years ago
+
+                        </div>
+                        <div class="community-badge-container-titles">
+
+                        </div>
+                        <div class="community-badge-container-achievements">
+
+                        </div>
+                    </div>
+                    <div class="guide__user-comment__menu">
+                </header>
+                <section class="comment-body">
+                    <p>Thank you again Joel. I do think we are thinking in the same direction and this definitely helps
+                        me in understanding how this could help.</p>
+                    <p>Regarding how to collect feedback. Did you consider allowing customers to create a ticket for
+                        feedback instead? It could perhaps be a lightweight ticket form that you use, so people don't
+                        have to enter a lot, but you would receive them in your Zendesk and could create a view for
+                        them. I am most likely missing a use case here, so if this is something you've thought of before
+                        I would love hear whether that could work in your organization.</p>
+                </section>
+            </div>
+            <hr>
+            <div class="comment-wrapper ">
+                <header class="guide__user-comment__header">
+                    <div class="guide__user-avatar__wrap">
+                        <div class="guide__user-avatar"
+                            style="background-image: url(https://support.zendesk.com/system/photos/107280797/1913460_10152107732991964_6731524725653184974_o.jpg);">
+                        </div>
+
+                    </div>
+                    <div class="guide__user-comment__meta">
+                        <span title="Christian Colding">
+
+                            Christian Colding
+
+                        </span>
+                        <div class="meta-group">
+
+                            4 years ago
+
+                        </div>
+                        <div class="community-badge-container-titles">
+
+                        </div>
+                        <div class="community-badge-container-achievements">
+
+                        </div>
+                    </div>
+                    <div class="guide__user-comment__menu">
+                </header>
+                <section class="comment-body">
+                    <p>Thank you again Joel. I do think we are thinking in the same direction and this definitely helps
+                        me in understanding how this could help.</p>
+                    <p>Regarding how to collect feedback. Did you consider allowing customers to create a ticket for
+                        feedback instead? It could perhaps be a lightweight ticket form that you use, so people don't
+                        have to enter a lot, but you would receive them in your Zendesk and could create a view for
+                        them. I am most likely missing a use case here, so if this is something you've thought of before
+                        I would love hear whether that could work in your organization.</p>
+                </section>
+            </div>
+            <hr>
+            <div class="comment-wrapper ">
+                <header class="guide__user-comment__header">
+                    <div class="guide__user-avatar__wrap">
+                        <div class="guide__user-avatar"
+                            style="background-image: url(https://support.zendesk.com/system/photos/107280797/1913460_10152107732991964_6731524725653184974_o.jpg);">
+                        </div>
+
+                    </div>
+                    <div class="guide__user-comment__meta">
+                        <span title="Christian Colding">
+
+                            Christian Colding
+
+                        </span>
+                        <div class="meta-group">
+
+                            4 years ago
+
+                        </div>
+                        <div class="community-badge-container-titles">
+
+                        </div>
+                        <div class="community-badge-container-achievements">
+
+                        </div>
+                    </div>
+                    <div class="guide__user-comment__menu">
+                </header>
+                <section class="comment-body">
+                    <p>Thank you again Joel. I do think we are thinking in the same direction and this definitely helps
+                        me in understanding how this could help.</p>
+                    <p>Regarding how to collect feedback. Did you consider allowing customers to create a ticket for
+                        feedback instead? It could perhaps be a lightweight ticket form that you use, so people don't
+                        have to enter a lot, but you would receive them in your Zendesk and could create a view for
+                        them. I am most likely missing a use case here, so if this is something you've thought of before
+                        I would love hear whether that could work in your organization.</p>
+                </section>
+            </div>
+            <hr>
+            <div class="comment-wrapper ">
+                <header class="guide__user-comment__header">
+                    <div class="guide__user-avatar__wrap">
+                        <div class="guide__user-avatar"
+                            style="background-image: url(https://support.zendesk.com/system/photos/107280797/1913460_10152107732991964_6731524725653184974_o.jpg);">
+                        </div>
+
+                    </div>
+                    <div class="guide__user-comment__meta">
+                        <span title="Christian Colding">
+
+                            Christian Colding
+
+                        </span>
+                        <div class="meta-group">
+
+                            4 years ago
+
+                        </div>
+                        <div class="community-badge-container-titles">
+
+                        </div>
+                        <div class="community-badge-container-achievements">
+
+                        </div>
+                    </div>
+                    <div class="guide__user-comment__menu">
+                </header>
+                <section class="comment-body">
+                    <p>Thank you again Joel. I do think we are thinking in the same direction and this definitely helps
+                        me in understanding how this could help.</p>
+                    <p>Regarding how to collect feedback. Did you consider allowing customers to create a ticket for
+                        feedback instead? It could perhaps be a lightweight ticket form that you use, so people don't
+                        have to enter a lot, but you would receive them in your Zendesk and could create a view for
+                        them. I am most likely missing a use case here, so if this is something you've thought of before
+                        I would love hear whether that could work in your organization.</p>
+                </section>
+            </div>
+        </section>
+        <div id="form" class="form">
+
+            <h2 class="center">What did you Liked?</h2>
+            <h2 class="center">Write a Review here</h2>
+            <form id="usr_review" action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Email Id">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Phone Number">
+                </div>
+            </form>
+            <div class="form-group">
+                <!-- <label for="message">Message: </label> -->
+                <textarea form="usr_review" name="message" id="message" placeholder="Your Review"></textarea>
+            </div>
+            <button class="btn3">Submit</button>
+
+
+        </div>
+    </div>
+
+    <section id="footer" class="footer d-flex">
+        <div class="logo"><a href="#"><img src="logo.png" alt=""></a></div>
+        <div class="columns d-flex">
+            <ul class="d-flex">
+                <ul class="navigation d-flex-col">
+                    <lh>Navigation</lh>
+                    <li>Home</li>
+                    <li>Events</li>
+                    <li>Testimonial</li>
+                    <li>Categories</li>
+                    <li>Contacts</li>
+                </ul>
+                <ul class="links d-flex-col">
+                    <lh>Useful Links</lh>
+                    <li>Registration</li>
+                    <li>Login</li>
+                    <li>Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+                <ul class="instaFeed d-flex-col">
+                    <lh>Instagram Feed</lh>
+                    <li>
+                    <ul class="d-flex">
+                    <li><a href="#"><img src="insta/1.jpg"></a></li>
+                    <li><a href="#"><img src="insta/2.jpg"></a></li>
+                    <li><a href="#"><img src="insta/3.jpg"></a></li>
+                    <li><a href="#"><img src="insta/4.jpg"></a></li>
+                    <li><a href="#"><img src="insta/5.jpg"></a></li>
+                    <li><a href="#"><img src="insta/6.jpg"></a></li>
+                </li>
+                </ul>
+                </ul>
+            </ul>
+        </div>
+        <div class="foot">
+
+        </div>
+    </section>
+
 </body>
+
 </html>
