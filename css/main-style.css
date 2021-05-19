@@ -14,8 +14,8 @@ body {
 :root {
   --footer-margin: 8.2em;
   --insta-margin: 0.125em;
-  /* --navbar-height: 59px; */
-  --blue: #007bff;
+  /* --navbar-height: 59px;
+ /*  --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -45,7 +45,7 @@ body {
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+    "Liberation Mono", "Courier New", monospace; */
 }
 
 /* Navigation Bar */
@@ -81,6 +81,7 @@ body {
   display: flex;
   margin: auto 1.25em;
   padding: 0em 0.3125em;
+  align-items: center;
 }
 /*#navbar ul */
 li {
@@ -101,7 +102,6 @@ li {
 }
 #navbar ul li a:hover {
   background-color: rgb(187, 187, 187);
-
   color: black;
   background-color: white;
 }
@@ -113,17 +113,17 @@ li {
   top: 0em;
   left: 0em;
   background: url("../banner2.jpeg") no-repeat center center/cover;
-  height: 31.25em;
+  height: 497px;
   width: 100%;
   z-index: -1;
   opacity: 0.89;
 }
 #home {
-  background-color: #343a40;
+  /* background-color: #343a40; */
   opacity: 0.99;
   display: flex;
   flex-direction: column;
-  padding: 0.1875em 12.5em;
+  padding: 0em 12.5em;
   height: 25.625em;
   justify-content: center; /*Horizontally*/
   align-items: center;
@@ -145,20 +145,22 @@ li {
   height: auto;
   background-color: bisque;
   z-index: -10;
+  margin-bottom: -7px;
 }
 
 #intro-left {
+  font-size: 3.7rem;
   text-align: center;
   margin: 0 0;
   width: 50%;
-  padding: 0.32894736842105265em 0.32894736842105265em;
+  padding: 0em 0.32894736842105265em;
   justify-content: center;
   display: flex;
   flex-flow: column;
   
 }
 .btn {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   padding: 0.25em 0.8333333333333334em;
   background-color: brown;
   color: white;
@@ -173,10 +175,10 @@ li {
   width: 50%;
 }
 #intro-right img {
-  height: 31em;
+  /* height: 31em; */
   width: 100%;
-  position:relative;
-  top: 0.1875em;
+  /* position: relative;
+  top: 0.1875em; */
 }
 
 /* -------------------- Specialities -------------------- */
@@ -186,6 +188,7 @@ li {
   /* position: relative; */
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   /* margin: 0 0; */
   /* padding: 2px 2px; */
   /* border: 2px solid rgb(255, 0, 0); */
@@ -210,8 +213,8 @@ li {
   align-items: center;
   max-width: 21em;
   justify-content: center;
-
-  margin: 1.6875em 2.0625em;
+  flex-basis: 33.333333%;
+  margin: 0em 2.0625em 0em 2.0625em;
   padding: 2.25em 2.25em;
 
   /* width: 32%; */
@@ -370,6 +373,7 @@ form.example::after {
   align-items: center;
   max-width: 17.875em;
   justify-content: center;
+  flex-basis: 25%;
   margin: 0.9375em 1.5em;
   padding: 0.6875em 0.6875em;
 
@@ -629,7 +633,7 @@ textarea {
   padding: 0.19736842105263158em;
 }
 .h-secondary {
-  font-size: 2.3rem;
+  font-size: 2.0rem;
   padding: 0.32608695652173914em;
 }
 .center {
@@ -644,9 +648,27 @@ hr {
 
 /* ---------------------- Media ---------------------- */
 
-@media only screen and (max-width: 1400px) {
+/* @media only screen and (max-width: 1421px) {
+
+} */
+@media only screen and (max-width: 1428px) {
+.items{
+  margin: 0em 0em;
+}
+#recommendations .items {
+  margin: 0.9375em 0em;
+}
+
+
+@media only screen and (max-width: 1399px) {
   .logo {
     margin-right: 10em;
+  }
+  #intro-left{
+    font-size: 3.3em;
+  }
+  .h-secondary {
+    font-size: 1.7rem;
   }
 }
 @media only screen and (max-width: 1300px) {
@@ -657,36 +679,51 @@ hr {
   .logo {
     margin: 4em 7em auto 3em;
   }
-  .navigation, .links {
+  .navigation,
+  .links {
     margin: 0em 0;
     flex: 2;
-}
+  }
 }
 @media only screen and (max-width: 1287px) {
-  .footer-social{
+  .footer-social {
     min-width: 20.8375em;
     margin: 0em 0em;
   }
-  #policy{
+  #policy {
     margin: 1.25em 1.25em 0em 0em;
   }
   .footer-social span {
     /* font-size: 1.25em; */
     margin: 0em 0.125em 0em 0em;
     padding: 0em 0.125em 0em 0em;
+  }
+  .h-primary {
+    font-size: 3.3rem;
+    /* padding: 0.19736842105263158em; */
+  }
 }
-.h-primary {
-  font-size: 3.3rem;
-  /* padding: 0.19736842105263158em; */
-}
-.h-secondary {
-font-size: 2rem;
-/* padding: 0.32608695652173914em; */
-}
+@media only screen and (max-width: 1257px) {
+  #intro-left{
+    font-size: 3.0em;
+  }
+  .h-secondary {
+    font-size: 1.4rem;
+  }
+
 }
 @media only screen and (max-width: 1139px) {
-  .instaFeed img{
+  .instaFeed img {
     width: 6em;
+  }
+  #home {
+    padding: 0em 3.5em 0em 3.5em;
+  }
+  #intro-left{
+    font-size: 2.8em;
+  }
+  .h-secondary {
+    font-size: 1.2rem;
   }
 }
 @media only screen and (max-width: 1039px) {
@@ -696,12 +733,18 @@ font-size: 2rem;
   /* #policy{
     margin: 0.25em 1.25em 0em 0em;
   } */
-  .footer-social{
+  .footer-social {
     min-width: 17.8375em;
+  }
+  #intro-left{
+    font-size: 2.7em;
+  }
+  .h-secondary {
+    font-size: 1.1rem;
   }
 }
 @media only screen and (max-width: 999px) {
-  .logo img{
+  .logo img {
     width: 5em;
   }
   .logo {
@@ -709,13 +752,103 @@ font-size: 2rem;
   }
   .columns {
     margin: 2em auto;
+  }
+  .heading {
+    margin: 0em 1.5625em 1.5625em 0em !important;
+    padding: 0 0 0 0 !important;
+  }
+  .review-container {
+    padding: 0px 0.125em;
+  }
+  hr {
+    margin-top: 0em;
 }
-.heading {
-  margin: 0em 1.5625em 1.5625em 0em !important;
-  padding: 0 0 0 0 !important;
+.comment-wrapper {
+  padding: 0.5625em 1.5625em;
+}
+.review-container {
+  flex-direction: column;
+}
+.form {
+  padding: 0em 1.25em;
+}
+.reviews {
+  margin: 1.25em 0.625em 1.25em 0.625em;
+}
+.form-group {
+  margin: auto;
+  width: 70%;
+}
+.btn3 {
+  width: 60%;
 }
 }
-/* @media only screen and (max-width: 931px) {
-  
-} */
-
+@media only screen and (max-width: 931px) {
+  .instaFeed img {
+    width: 5em;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #intro-left{
+    font-size: 2.0em;
+  }
+  .h-secondary {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 697px) {
+  #policy p {
+    font-size: 1em;
+  }
+  #policy {
+    min-width: 100%;
+    margin: 1.25em 0.25em 0em 0em;
+  }
+  .foot {
+    margin: 0.5em 1.2em 1em 1.2em;
+  }
+}
+@media only screen and (max-width: 817px) {
+  .instaFeed img {
+    width: 4em;
+  }
+  #logo img {
+    margin: 0.3em 0em 0em 0em;
+    height: 4em;
+  }
+  #navbar {
+    flex-direction: column;
+  }
+  #navbar ul li a {
+    font-size: 1em;
+    padding: 0.40006666666666667em 0.5em;
+    margin: 0em 0em;
+  }
+  #navbar ul {
+    margin: 0.4em 1.25em;
+  }
+  #home {
+    height: 21em;
+    /* padding: 0.1875em 2.5em; */
+  }
+  #home::before {
+    height: 28.6em;
+  }
+}
+@media only screen and (max-width: 571px) {
+  #home p {
+    font-size: 1.3rem;
+  }
+  .h-primary {
+    font-size: 2.9rem;
+  }
+  #intro-left{
+    font-size: 2.3em;
+  }
+  .h-secondary{
+    font-size: 1.2rem;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+}
