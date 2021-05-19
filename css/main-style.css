@@ -164,9 +164,10 @@ li {
   padding: 0.25em 0.8333333333333334em;
   background-color: brown;
   color: white;
-  margin: 0.7083333333333334em;
+  margin: 0 auto;
   border-radius: 0.4166666666666667em;
   cursor: pointer;
+  width: 70%;
 }
 
 #intro-right {
@@ -333,11 +334,12 @@ form.example {
 }
 form.example input[type="text"] {
   font-size: 1.0625em;
-  padding: 0.5882352941176471em;
+  padding: 0.5em 0.5em 0.5em 1.5em;
   /* border: 1px solid grey; */
   float: left;
   width: 80%;
   background: #f1f1f1;
+  border-radius: 2em 0em 0em 2em;
 }
 
 form.example button {
@@ -350,6 +352,7 @@ form.example button {
   border: 0.05555555555555555em solid grey;
   border-left: none;
   cursor: pointer;
+  border-radius: 0em 2em 2em 0em;
 }
 
 form.example button:hover {
@@ -835,6 +838,34 @@ hr {
     height: 28.6em;
   }
 }
+@media only screen and (max-width: 720px) {
+  #intro-left{
+    font-size: 1.0em;
+  }
+  .h-secondary {
+    font-size: 0.5rem;
+  }
+  .logo {
+    margin: 2em 1.5em auto 1em;
+}
+.footer-social span {
+  font-size: 1em;
+}
+.footer-social a {
+  font-size: 0.75em;
+}
+#policy p {
+  font-size: 0.9em;
+}
+/* , .links li  */
+.navigation li{
+  margin: 0em 0.3125em 0em 0em;
+  /* padding: 0.3125em 0.3125em 0.3125em 0em; */
+}
+
+}
+
+
 @media only screen and (max-width: 571px) {
   #home p {
     font-size: 1.3rem;
@@ -842,7 +873,23 @@ hr {
   .h-primary {
     font-size: 2.9rem;
   }
-  #intro-left{
+  .instaFeed img {
+    width: 5.3em;
+}
+.logo {
+  display: none;
+}
+.columns {
+  margin: 1.5em 1em;
+}
+.heading{
+  font-size: 0.9em;
+}
+.footer .columns li{
+  font-size: 0.8em;
+
+}
+  /* #intro-left{
     font-size: 2.3em;
   }
   .h-secondary{
@@ -850,5 +897,5 @@ hr {
   }
   .btn {
     font-size: 1.2rem;
-  }
+  } */
 }
